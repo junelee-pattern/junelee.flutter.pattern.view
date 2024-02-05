@@ -21,3 +21,45 @@ class ThemeColorScheme {
   static Color dialogBackgroundColor = Colors.white;
   static Color dialogDarkBackgroundColor = Colors.black;
 }
+
+class _View extends StatelessWidget {
+  const _View({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("App bar background color"),
+      ),
+      body: Column(
+        children: [
+          Gap(30),
+          Text("text color "),
+          ElevatedButton(
+            onPressed: () {
+              print('Button Pressed');
+            },
+            child: Text('"button little primary color '),
+          ).padding(all: 8),
+          Container(
+            height: 30,
+            width: 1.sw,
+            child: Text("container color is same as background color"),
+          ),
+          Icon(Icons.favorite_border),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+          onPressed: () {
+            Get.changeTheme(Get.isDarkMode
+                ? ThemeConfig.appTheme
+                : ThemeConfig.appDarkTheme);
+          },
+          label: Text("floating button color is primaryContainer ")),
+    );
+  }
+}
+
+main() async {
+  return startApp(home: _View());
+}

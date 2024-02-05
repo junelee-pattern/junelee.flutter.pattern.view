@@ -2,17 +2,31 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import 'package:country_code_picker/country_code_picker.dart';
+import 'package:device_preview/device_preview.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:easy_localization_loader/easy_localization_loader.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_fgbg/flutter_fgbg.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_phoenix/flutter_phoenix.dart';
+import 'package:loader_overlay/loader_overlay.dart';
 
 import '../../../../../main.dart';
-import '../app/_/_/interaction/view/_/_/init_view.dart';
+import '../util/params/app_cycle.dart';
+import '../app/_/_/interaction/listener/_/app_life_cycle/turn_background.dart';
+import '../app/_/_/interaction/listener/_/app_life_cycle/turn_foreground.dart';
+import '../app/_/_/interaction/view/_/workspace.dart';
 import 'config/screen_rotate.dart';
+import 'config/support_language.dart';
 import 'config/theme/_config.dart';
 import 'ready/ready.dart';
 
 export 'config/theme/_config.dart';
+export 'config/firebase_function.dart';
 export 'config/screen_rotate.dart';
+export 'config/support_language.dart';
+export 'config/isolate.dart';
 export '../../../../../main.dart';
 
 Future<void> myApp(
@@ -22,9 +36,20 @@ Future<void> myApp(
       designSize: const Size(360, 690),
       builder: (context, child) {
         readyForMaterialAppStart();
-        return MyApp(
-          home,
-          callAfterBuild: callAfterBuild,
+        return EasyLocalization(
+          supportedLocales: AppSupportLanguage().get(),
+          path: 'assets/localization.csv',
+          assetLoader: CsvAssetLoader(),
+          fallbackLocale: const Locale('en'),
+          child: Phoenix(
+            child: DevicePreview(
+              enabled: false,
+              builder: (context) => MyApp(
+                home,
+                callAfterBuild: callAfterBuild,
+              ),
+            ),
+          ),
         );
       }));
 }
@@ -37,15 +62,46 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Awesome Flutter StarterKit",
-      theme: ThemeConfig.appTheme,
-      darkTheme: ThemeConfig.appDarkTheme,
-      themeMode: ThemeMode.system,
-      debugShowCheckedModeBanner: false,
-      home: _ReadyPage(
-        home: home,
-        callAfterBuild: callAfterBuild,
+    EasyLocalization.of(context)
+        ?.setLocale(Locale(context.locale.languageCode));
+    return GlobalLoaderOverlay(
+      overlayColor: Colors.transparent,
+      useDefaultLoading: false,
+      child: FGBGNotifier(
+        onEvent: (event) {
+          if (event == FGBGType.foreground) {
+            isForeground = true;
+            TurnForegroundListener();
+          } else {
+            isForeground = false;
+            TurnBackgroundListener();
+          }
+        },
+        child: GetMaterialApp(
+          localizationsDelegates: context.localizationDelegates
+            ..add(CountryLocalizations.delegate),
+          supportedLocales: context.supportedLocales,
+          locale: DevicePreview.locale(context),
+          //context.locale,
+          title: "Awesome Flutter StarterKit",
+          theme: ThemeConfig.appTheme,
+          //lightThemeData,
+          darkTheme: ThemeConfig.appDarkTheme,
+          //darkThemeData,
+          themeMode: ThemeMode.system,
+
+          debugShowCheckedModeBanner: false,
+          builder: (context, child) {
+            // do your initialization here
+            child = EasyLoading.init()(context, child);
+            child = DevicePreview.appBuilder(context, child);
+            return child;
+          },
+          home: _ReadyPage(
+            home: home,
+            callAfterBuild: callAfterBuild,
+          ),
+        ),
       ),
     );
   }
@@ -73,7 +129,7 @@ class _ViewState extends State<_ReadyPage> with AfterLayoutMixin<_ReadyPage> {
   dynamic _ready() async {
     await readyForAppStart(context);
 
-    streamController.add(await InitView()(context));
+    streamController.add(await WorkSpacePage()(context));
     // return true;
   }
 
