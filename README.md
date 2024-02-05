@@ -1,5 +1,5 @@
 # Junelee Flutter Pattern.lego-flutter
-The Junelee Flutter Pattern is an architecture that incorporates a lot of effort to develop and release an app in one shot, featuring five key Lego pieces and various other Legos
+The Junelee Flutter Pattern is an architecture that incorporates a lot of effort to develop and release an app in one shot, featuring four key Lego pieces and various other Legos
 
 ## key Legos
 - junelee-getx-pattern.lego-flutter
