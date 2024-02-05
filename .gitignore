@@ -153,3 +153,5 @@ lib/firebase_options.second.dart
 test/widget_test.dart
 lib/note_view.dart
 lib/note.dart
+ios/Runner.xcodeproj/project.pbxproj
+firebase.json
