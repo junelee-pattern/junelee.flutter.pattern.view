@@ -9,4 +9,4 @@ The Junelee Flutter Pattern is an architecture that incorporates a lot of effort
 - junelee-patterm.lego-firebase_function
   - The junelee.pattern.lego-firebase_function is a pattern that combines the junelee-database-pattern.lego-firebase_function, firebase_messaging.lego-firebase_function, firebase_messaging.lego_flutter, and various other legos to make communication with the server extremely easy and convenient.
 - Junelee-fastlane.lego-flutter
-  - The Junelee-fastlane.lego-flutter is a lego that provides a very easy way to implement CI/CD using fastlane, offering detailed guidance on the method and code.
+  - The junelee-fastlane.lego-flutter is a lego that provides a very easy way to implement CI/CD using fastlane, offering detailed guidance on the method and code.
