@@ -1,0 +1,48 @@
+# # Auto detect text files and perform LF normalization
+* text=auto
+
+lib/apps/start_app.dart merge=ours
+lib/oss_licenses.dart merge=ours
+lib/main.dart merge=ours
+pubspec.lock merge=ours
+pubspec.yaml merge=ours
+README.md merge=ours
+.gitignore merge=ours
+.gitattributes merge=ours
+assets/langs.csv merge=ours
+
+guide/app/background.md merge=ours
+guide/app/core.md merge=ours
+guide/app/database.md merge=ours
+guide/app/functions.md merge=ours
+guide/app/location.functions.md merge=ours
+guide/app/need_check_after_release.md merge=ours
+guide/app/scenario.md merge=ours
+guide/app/screens.md merge=ours
+guide/app/sync.md merge=ours
+guide/app/widgets.md merge=ours
+
+## for screen shot
+test_driver/page1.dart merge=ours
+test_driver/page1_test.dart merge=ours
+test_driver/page2.dart merge=ours
+test_driver/page2_test.dart merge=ours
+test_driver/page3.dart merge=ours
+test_driver/page3_test.dart merge=ours
+test_driver/page4.dart merge=ours
+test_driver/page4_test.dart merge=ours
+test_driver/page5.dart merge=ours
+test_driver/page5_test.dart merge=ours
+tools/screenshots.dart merge=ours
+lib/value.dart merge=ours
+
+assets/langs.csv merge=ours
+
+metadata/gateway.dart merge=ours
+
+lib/apps/setting_all/params/assets/assets.gen.dart merge=ours
+
+guide/app/database.md merge=ours
+guide/app/functions.md merge=ours
+guide/app/location.functions.md merge=ours
+guide/app/screens.md merge=ours

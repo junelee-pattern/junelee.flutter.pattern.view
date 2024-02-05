@@ -1,0 +1,103 @@
+name: lego
+description: "Awesome Flutter Skeleon for starter"
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.4 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  gap: ^3.0.1
+  styled_widget: ^0.4.0+3
+  flutter_svg: ^2.0.4
+  event_bus: ^2.0.0
+  after_layout: ^1.2.0
+  flutter_screenutil: ^5.5.3+2
+  flutter_native_splash: ^2.0.5
+  page_transition: ^2.0.9
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_driver:
+    sdk: flutter
+
+
+
+
+flutter_gen:
+  output: lib/util/params # Optional (default: lib/gen/)
+  line_length: 1000
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/image/
+    - assets/illu/
+    - assets/launcher_icons/
+    - assets/lottie/
+    - assets/splash/
+    - assets/svg.icon/
+    - assets/svg.icon/instagram/
+    - assets/localization.csv
+
+flutter_icons:
+  image_path_android: "assets/launcher_icons/android.png"
+  image_path_ios: "assets/launcher_icons/ios.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#ffffff" # only available for Android 8.0 devices and above
+  adaptive_icon_foreground: "assets/launcher_icons/android.png" # only available for Android 8.0 devices and above
+
+flutter_native_splash:
+  color: "#ffffff"
+  #background_image: "assets/splash/background.png"
+  image: assets/splash/icon.png
+
+  color_dark: "#ffffff"
+  ##background_image_dark: "assets/dark-background.png"
+  image_dark: assets/splash/icon.png
+
+  #android: false
+  #ios: false
+  #web: false
+
+  #android_gravity: center
+  #ios_content_mode: center
+  #web_image_mode: center
+
+  fullscreen: true
+
+# ➜ flutter packages pub run build_runner build --delete-conflicting-outputs
+targets:
+  $default:
+    builders:
+      your_builder:
+        generate_for:
+          - lib/**/*.dart
+      mockito:mockBuilder:
+        enabled: false
+      json_serializable:
+        enabled: false
+      freezed:
+        enabled: false
+      hive_generator:
+        enabled: false
+      flutter_launcher_icons:
+        enabled: true
+      flutter_native_splash:
+        enabled: true
+      flutter_gen:
+        enabled: true
+      isar_generator:
+        enabled: true
