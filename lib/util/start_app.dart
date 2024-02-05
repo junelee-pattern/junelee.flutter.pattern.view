@@ -26,7 +26,6 @@ export 'config/theme/_config.dart';
 export 'config/firebase_function.dart';
 export 'config/screen_rotate.dart';
 export 'config/support_language.dart';
-export 'config/isolate.dart';
 export '../../../../../main.dart';
 
 Future<void> myApp(
