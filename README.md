@@ -96,6 +96,19 @@ Please pull request your view.
   </tr>
 </table>
 
+
+## Dialog
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/bf63319b-b4c5-42d0-98f6-cf3e9c38ec47" width="300">
+      <p>style1</p>
+      <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
+    </td>
+  </tr>
+</table>
+
+
 ## Toast
 <table>
   <tr>
