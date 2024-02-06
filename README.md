@@ -1,5 +1,6 @@
 # Junelee Views 
 This is a repository for sharing various views that have been created. It follows the Lego architecture and can be applied immediately.
+Please pull request your view.
 
 ## Get Started
 1. Start your project with the [following template](https://github.com/melodysdreamj/junelee.pattern.lego-flutter).
