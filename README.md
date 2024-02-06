@@ -47,7 +47,7 @@ Please pull request your view.
 </table>
 
 ## Bottom Sheet
-<table>ㅇ
+<table>
   <tr>
     <td>
       <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/5117df01-9c59-4cd7-8e41-59af1ba21e88" width="300">
@@ -85,6 +85,12 @@ Please pull request your view.
        <td>
       <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/830fdb6b-36b0-4d4b-90b4-e57e3f1695d1" width="300">
       <p>style3</p>
+      <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
+    </td>
+      </td>
+       <td>
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/eba137ee-b894-41ac-a619-93c660e68871" width="300">
+      <p>style4</p>
       <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
     </td>
   </tr>
