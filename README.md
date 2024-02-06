@@ -59,7 +59,7 @@ Please pull request your view.
     </td>
       <td>
       <p>style1.error</p>
-      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/e6c7d402-ac56-4e52-b76d-6ec2be4174a9" width="200">
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/ac252bb9-36d7-491a-a8c5-a00061705e0f" width="200">
     </td>
   </tr>
 </table>
