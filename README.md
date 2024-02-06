@@ -13,16 +13,21 @@ Please pull request your view.
 <table>
   <tr>
     <td>
-      <p>form.style1</p>
       <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/2a46cdfc-2276-4bc0-b223-9d3fd65fa867" width="200">
+       <p>form.style1</p>
+      <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
     </td>
     <td>
       <p>get_phone_number</p>
-      <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/a722f9c3-f303-4078-9004-a7f8a6356934" width="200">
+      <a href="링크_주소">
+        <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/a722f9c3-f303-4078-9004-a7f8a6356934" width="200">
+      </a>
     </td>
     <td>
       <p>toss_intro</p>
-      <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/4d8b0936-99bd-48e2-a883-8f69dfc15821" width="200">
+      <a href="링크_주소">
+        <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/4d8b0936-99bd-48e2-a883-8f69dfc15821" width="200">
+      </a>
     </td>
   </tr>
 </table>
@@ -51,6 +56,10 @@ Please pull request your view.
     <td>
       <p>style1</p>
       <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/b968a5f2-d238-44df-b341-4135bcbe2940" width="200">
+    </td>
+      <td>
+      <p>style1.error</p>
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/e6c7d402-ac56-4e52-b76d-6ec2be4174a9" width="200">
     </td>
   </tr>
 </table>
