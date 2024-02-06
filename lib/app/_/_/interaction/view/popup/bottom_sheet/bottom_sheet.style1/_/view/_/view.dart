@@ -33,23 +33,19 @@ class _VState extends State<V> {
             height: 80,
             decoration: BoxDecoration(
               border: Border.all(
-                  color: Theme.of(context).textTheme.bodyMedium!.color!,
-                  width: 2,
-                  style: BorderStyle.solid),
+                  color: Colors.black, width: 2, style: BorderStyle.solid),
               borderRadius: BorderRadius.circular(1000),
               // color: Colors.yellowAccent,
             ),
             child: SvgPicture.asset(
-              Assets.svg.instagram.follower,
-              colorFilter: ColorFilter.mode(
-                  Theme.of(context).textTheme.bodyMedium!.color!,
-                  BlendMode.srcIn),
+              Assets.svg.follower,
+              colorFilter: ColorFilter.mode(Colors.black, BlendMode.srcIn),
             ).paddingDirectional(all: 15),
           ),
           Gap(10),
-          Text(tr("로그인 후 활성화")).fontSize(20).fontWeight(FontWeight.w600),
+          Text(tr("Activate after login")).fontSize(20).fontWeight(FontWeight.w600),
           Gap(10),
-          Text(tr("로그인후 해당 기능을 사용하실수 있습니다."))
+          Text(tr("You can use this feature after logging in."))
               .fontSize(14)
               .textColor(Colors.grey),
           Gap(30),
@@ -59,13 +55,11 @@ class _VState extends State<V> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
-              side: BorderSide(
-                  color: Theme.of(context).textTheme.bodyMedium!.color!,
-                  width: 2), // 테두리 색상과 두께 설정
+              side: BorderSide(color: Colors.black, width: 2), // 테두리 색상과 두께 설정
             ),
-            child: Text(tr('로그인'))
+            child: Text(tr('Login'))
                 .fontWeight(FontWeight.bold)
-                .textColor(Theme.of(context).textTheme.bodyMedium!.color!)
+                .textColor(Colors.black)
                 .padding(vertical: 15, horizontal: 20),
           ),
           Gap(30),

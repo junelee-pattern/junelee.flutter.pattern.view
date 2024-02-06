@@ -30,20 +30,17 @@ class _VState extends State<V> {
     List<Tuple3<String, String, String>> introData = [];
 
     introData.add(
-        Tuple3(Assets.illu.money.path, "${tr("숨은 보험금")}\n${tr("찾기")}", ""));
+        Tuple3(Assets.illu.money.path, "${tr("Hidden insurance")}\n${tr("Find")}", ""));
     introData.add(
-        Tuple3(Assets.illu.money2.path, "${tr("평생")}\n${tr("송금 무료")}", ""));
-    introData.add(Tuple3(Assets.illu.bank.path, tr("토스뱅크"), tr("1금융권 은행")));
+        Tuple3(Assets.illu.money2.path, "${tr("Lifetime")}\n${tr("Free remittance")}", ""));
+    introData.add(Tuple3(Assets.illu.bank.path, tr("Toss Bank"), tr("Prime bank")));
     introData.add(
-        Tuple3(Assets.illu.hospital.path, "${tr("병원비")}\n${tr("돌려받기")}", ""));
+        Tuple3(Assets.illu.hospital.path, "${tr("Medical expenses")}\n${tr("Get refunded")}", ""));
     introData.add(
-        Tuple3(Assets.illu.vaccine.path, "${tr("무료")}\n${tr("백신보험")}", ""));
+        Tuple3(Assets.illu.vaccine.path, "${tr("Free")}\n${tr("Vaccine insurance")}", ""));
     introData.add(
-        Tuple3(Assets.illu.money4.path, "${tr("정부지원금")}\n${tr("찾기")}", ""));
-    introData.add(Tuple3(Assets.illu.stock.path, "토스증권\n주식을 간편하게", ""));
-    introData.add(Tuple3(Assets.illu.money.path, "숨은 보험금\n찾기", ""));
-    introData.add(Tuple3(Assets.illu.money.path, "숨은 보험금\n찾기", ""));
-    introData.add(Tuple3(Assets.illu.money.path, "숨은 보험금\n찾기", ""));
+        Tuple3(Assets.illu.money4.path, "${tr("Government subsidy")}\n${tr("Find")}", ""));
+    introData.add(Tuple3(Assets.illu.stock.path, "Toss Securities\nTrade stocks easily", ""));
 
     return GetBuilder<NewVM>(
       tag: widget.tag,
@@ -55,10 +52,10 @@ class _VState extends State<V> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Gap(60),
-              Text(tr("금융의 모든 것"))
+              Text(tr("Everything about finance"))
                   .textStyle(Theme.of(context).textTheme.headline5!)
                   .fontWeight(FontWeight.bold),
-              Text(tr("토스에서 간편하게"))
+              Text(tr("Easily with Toss"))
                   .textStyle(Theme.of(context).textTheme.headline5!)
                   .fontWeight(FontWeight.bold),
               const Spacer(
@@ -188,7 +185,7 @@ class _VState extends State<V> {
                       color: Theme.of(context).textTheme.bodyMedium!.color!,
                       width: 2), // 테두리 색상과 두께 설정
                 ),
-                child: Text(tr("시작하기"))
+                child: Text(tr("Get started"))
                     .fontWeight(FontWeight.bold)
                     .textColor(Theme.of(context).textTheme.bodyMedium!.color!)
                     .padding(vertical: 15, horizontal: 20),

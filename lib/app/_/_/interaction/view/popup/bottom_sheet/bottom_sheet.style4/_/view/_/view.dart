@@ -32,12 +32,12 @@ class _VState extends State<V> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(tr("앱 사용을 위해 권한을 허용해주세요"))
+              Text(tr("Please allow permissions to use the app."))
                   .textStyle(Theme.of(context).textTheme.titleLarge!)
                   .fontWeight(FontWeight.w800)
                   .fontSize(20),
               Gap(5),
-              Text(tr("꼭 필요한 권한만 받아요"))
+              Text(tr("We only request essential permissions."))
                   .textStyle(Theme.of(context).textTheme.titleLarge!)
                   .fontWeight(FontWeight.w800)
                   .fontSize(20),
@@ -45,31 +45,31 @@ class _VState extends State<V> {
               NewItemView(
                   params: NewItemParams(
                       icon: Icons.phone,
-                      permissionTitle: tr("전화"),
-                      permissionDescription: tr("전화번호를 읽고 친구계정을 추가합니다."))),
+                      permissionTitle: tr("Call"),
+                      permissionDescription: tr("Read phone numbers and add friends' accounts."))),
               NewItemView(
                   params: NewItemParams(
                       icon: Icons.contacts,
-                      permissionTitle: tr("주소록"),
+                      permissionTitle: tr("Contacts"),
                       permissionDescription: tr(
-                          "연락처에 저장된 사람들에게 무료로 송금하고, 프로필 사진을 불러오고, 다양한 혜택 제공을 위해 초대 메시지를 보낼 수 있습니다. 이를 위해 연락처 정보를 토스 서버에 최신으로 동기화합니다."))),
+                          "You can send money for free to people saved in your contacts, load profile pictures, and send invitation messages for various benefits. To do this, we synchronize contact information with the Toss server to keep it up to date."))),
               NewItemView(
                   params: NewItemParams(
                       icon: Icons.folder,
-                      permissionTitle: tr("저장공간"),
+                      permissionTitle: tr("Storage"),
                       permissionDescription:
-                          tr("공동인증서로 로그인하고, 송금확인증이나 QR코드를 저장합니다."))),
+                          tr("Log in with a digital certificate and save transfer confirmation receipts or QR codes."))),
               NewItemView(
                   params: NewItemParams(
                       icon: Boxicons.bxs_chat,
-                      permissionTitle: tr("알림"),
-                      permissionDescription: tr("새로운 친구가 MBTI 를 등록했을때 알려줘요."))),
+                      permissionTitle: tr("Notifications"),
+                      permissionDescription: tr("Notify me when a new friend registers their MBTI."))),
               NewItemView(
                   params: NewItemParams(
                       icon: Icons.track_changes,
-                      permissionTitle: tr("앱추적"),
+                      permissionTitle: tr("App tracking"),
                       permissionDescription: tr(
-                          "앱과 서버를 유지하기 위해 개인화된 광고를 앱 사용에 방해하지 않는 방식으로 보여줍니다."))),
+                          "We display personalized ads in a non-intrusive manner to maintain the app and server."))),
               Gap(20),
               MaterialButton(
                       onPressed: () {},
@@ -77,7 +77,7 @@ class _VState extends State<V> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: Text("로그인")
+                      child: Text("Login")
                           .textStyle(Theme.of(context).textTheme.bodyLarge!)
                           .textColor(Colors.white))
                   .width(1.sw)

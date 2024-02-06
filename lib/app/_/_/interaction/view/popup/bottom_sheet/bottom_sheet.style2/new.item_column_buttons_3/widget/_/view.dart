@@ -29,7 +29,7 @@ class _VState extends State<V> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
-            child: Text("즐겨찾기에 추가")
+            child: Text("Add to favorites")
                 .fontSize(TEXT_SIZE)
                 .fontWeight(FontWeight.w500)
                 .center(),
@@ -45,7 +45,7 @@ class _VState extends State<V> {
           }),
           Container().height(1).backgroundColor(Colors.grey.withOpacity(0.4)),
           Container(
-            child: Text("이 계정 정보")
+            child: Text("This account information")
                 .fontSize(TEXT_SIZE)
                 .fontWeight(FontWeight.w500)
                 .center(),
@@ -57,7 +57,7 @@ class _VState extends State<V> {
           }),
           Container().height(1).backgroundColor(Colors.grey.withOpacity(0.4)),
           Container(
-            child: Text("숨기기")
+            child: Text("Hide")
                 .fontSize(TEXT_SIZE)
                 .fontWeight(FontWeight.w500)
                 .center(),

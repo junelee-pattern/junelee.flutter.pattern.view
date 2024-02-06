@@ -41,9 +41,9 @@ class _VState extends State<V> {
                 SvgPicture.asset(Assets.svg.remove).paddingDirectional(all: 25),
           ),
           Gap(10),
-          Text(tr("에러 발생")).fontSize(20).fontWeight(FontWeight.w600),
+          Text(tr("Error")).fontSize(20).fontWeight(FontWeight.w600),
           Gap(10),
-          Text(tr("에러가 발생했습니다. \n홈페이지에서 다시 시도해주세요."))
+          Text(tr("An error has occurred. \nPlease try again on the homepage."))
               .textAlignment(TextAlign.center)
               .fontSize(14)
               .textColor(Colors.grey),
@@ -58,7 +58,7 @@ class _VState extends State<V> {
               ),
               side: BorderSide(color: Colors.black, width: 2), // 테두리 색상과 두께 설정
             ),
-            child: Text(tr('홈으로'))
+            child: Text(tr('Back to home'))
                 .fontWeight(FontWeight.bold)
                 .textColor(Colors.black)
                 .padding(vertical: 15, horizontal: 20),

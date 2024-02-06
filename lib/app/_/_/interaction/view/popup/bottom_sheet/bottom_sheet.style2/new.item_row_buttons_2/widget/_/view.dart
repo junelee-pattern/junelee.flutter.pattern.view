@@ -32,7 +32,7 @@ class _VState extends State<V> {
           children: [
             Icon(Icons.ios_share_outlined).iconSize(30),
             Gap(3),
-            Text("공유"),
+            Text("Share"),
           ],
         )
             .height(80)
@@ -49,7 +49,7 @@ class _VState extends State<V> {
           children: [
             Icon(Icons.link).iconSize(30),
             Gap(3),
-            Text("링크"),
+            Text("Url"),
           ],
         )
             .height(80)

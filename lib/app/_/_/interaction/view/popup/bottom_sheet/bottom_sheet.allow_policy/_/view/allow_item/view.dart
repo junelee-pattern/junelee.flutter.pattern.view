@@ -37,7 +37,7 @@ class _VState extends State<V> {
                 widget.params.label,
                 overflow: TextOverflow.ellipsis,
                 maxLines: 1,
-              ).fontWeight(FontWeight.w200).opacity(0.7).expanded(),
+              ).fontWeight(FontWeight.w300).opacity(0.7).expanded(),
             ],
           ).height(48).backgroundColor(Colors.transparent).gestures(onTap: () {
             vmNew.itemClick(widget.params.id);

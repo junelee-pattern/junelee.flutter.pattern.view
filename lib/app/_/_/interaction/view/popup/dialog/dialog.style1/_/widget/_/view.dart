@@ -29,10 +29,10 @@ class _VState extends State<V> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text("정말 위시글을")
+          Text("Are you sure you want ")
               .textStyle(Theme.of(context).textTheme.bodyMedium!)
               .fontWeight(FontWeight.bold),
-          Text("삭제하실 건가요??")
+          Text("to delete this post?")
               .textStyle(Theme.of(context).textTheme.bodyMedium!)
               .fontWeight(FontWeight.bold),
           SizedBox(height: 20),
@@ -54,7 +54,7 @@ class _VState extends State<V> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      child: Text("삭제").fontSize(12))
+                      child: Text("Delete").fontSize(12))
                   .expanded(),
               Gap(10),
               ElevatedButton(
@@ -69,7 +69,7 @@ class _VState extends State<V> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      child: Text("취소").fontSize(12))
+                      child: Text("Cancel").fontSize(12))
                   .expanded(),
             ],
           )

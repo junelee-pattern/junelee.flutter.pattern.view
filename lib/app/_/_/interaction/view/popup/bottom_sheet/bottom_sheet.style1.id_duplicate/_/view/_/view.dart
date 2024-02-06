@@ -40,10 +40,10 @@ class _VState extends State<V> {
                 .paddingDirectional(all: 15),
           ),
           Gap(10),
-          Text(tr("아이디중복")).fontSize(20).fontWeight(FontWeight.w600),
+          Text(tr("ID duplication")).fontSize(20).fontWeight(FontWeight.w600),
           Gap(10),
           Text(
-            tr("해당 아이디가 존재합니다. \n홈페이지에서 다시 시도해주세요."),
+            tr("This ID already exists. \nPlease try again on the website."),
           ).textAlignment(TextAlign.center).fontSize(14).textColor(Colors.grey),
           Gap(30),
           OutlinedButton(
@@ -56,7 +56,7 @@ class _VState extends State<V> {
               ),
               side: BorderSide(color: Colors.black, width: 2), // 테두리 색상과 두께 설정
             ),
-            child: Text(tr('홈으로'))
+            child: Text(tr('Back to home'))
                 .fontWeight(FontWeight.bold)
                 .textColor(Colors.black)
                 .padding(vertical: 15, horizontal: 20),

@@ -35,7 +35,7 @@ class _VState extends State<V> {
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               Text(
-                tr("서비스 제공을 위해 동의가 필요해요"),
+                tr("Consent is required to provide the service."),
                 overflow: TextOverflow.ellipsis,
                 maxLines: 2,
               )
@@ -49,7 +49,7 @@ class _VState extends State<V> {
                       .opacity(vmNew.totalAllow ? 0.9 : 0.1),
                   Gap(15),
                   Text(
-                    tr("모두 동의하기"),
+                    tr("Agree to all"),
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
                   )
@@ -72,7 +72,7 @@ class _VState extends State<V> {
               NewAllowItemView(
                 params: NewAllowItemParams(
                   id: 0,
-                  label: tr("회원 약관 및 동의사항"),
+                  label: tr("Membership terms and conditions of consent"),
                   onTap: () {},
                   detailPageOnTap: () {
                     NewMarkdownTempleteNavigator(NewMarkdownTempleteParams())
@@ -83,7 +83,7 @@ class _VState extends State<V> {
               NewAllowItemView(
                 params: NewAllowItemParams(
                   id: 1,
-                  label: tr("개인정보 식별번호 처리 동의사항"),
+                  label: tr("Consent to the processing of personal identification numbers"),
                   onTap: () {},
                   detailPageOnTap: () {
                     NewMarkdownPolicyNavigator(NewMarkdownPolicyParams())
@@ -94,7 +94,7 @@ class _VState extends State<V> {
               NewAllowItemView(
                 params: NewAllowItemParams(
                   id: 2,
-                  label: tr("새로운 내용 있을시 추가 / 없을시 이걸 지워주세요."),
+                  label: tr("Please add if there are new contents; delete this if there are none."),
                   onTap: () {},
                   detailPageOnTap: () {
                     NewMarkdownTempleteNavigator(NewMarkdownTempleteParams())
@@ -163,7 +163,7 @@ class _VState extends State<V> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15),
                       ),
-                      child: Text(tr("다음"))
+                      child: Text(tr("Next"))
                           .textStyle(Theme.of(context).textTheme.bodyLarge!)
                           .textColor(Colors.white))
                   .width(1.sw)

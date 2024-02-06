@@ -43,9 +43,9 @@ class _VState extends State<V> {
             ).paddingDirectional(all: 15),
           ),
           Gap(10),
-          Text(tr("로그인 후 활성화")).fontSize(20).fontWeight(FontWeight.w600),
+          Text(tr("Activate after login")).fontSize(20).fontWeight(FontWeight.w600),
           Gap(10),
-          Text(tr("로그인후 해당 기능을 사용하실수 있습니다."))
+          Text(tr("You can use this feature after logging in."))
               .fontSize(14)
               .textColor(Colors.grey),
           Gap(30),
@@ -57,7 +57,7 @@ class _VState extends State<V> {
               ),
               side: BorderSide(color: Colors.black, width: 2), // 테두리 색상과 두께 설정
             ),
-            child: Text(tr('로그인'))
+            child: Text(tr('Login'))
                 .fontWeight(FontWeight.bold)
                 .textColor(Colors.black)
                 .padding(vertical: 15, horizontal: 20),

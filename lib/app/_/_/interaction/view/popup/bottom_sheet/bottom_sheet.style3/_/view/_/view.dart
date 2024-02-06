@@ -31,7 +31,7 @@ class _VState extends State<V> {
           NewItemView(
               params: NewItemParams(
             icon: Icons.settings,
-            buttonText: tr("설정"),
+            buttonText: tr("Settings"),
             onPressed: (context) async {},
           )),
           NewItemView(
@@ -44,21 +44,21 @@ class _VState extends State<V> {
           NewItemView(
             params: NewItemParams(
               icon: Icons.timelapse_rounded,
-              buttonText: tr("내 활동"),
+              buttonText: tr("My activity"),
               onPressed: (context) async {},
             ),
           ),
           NewItemView(
             params: NewItemParams(
               icon: Icons.history,
-              buttonText: tr("보관"),
+              buttonText: tr("Archive"),
               onPressed: (context) async {},
             ),
           ),
           NewItemView(
             params: NewItemParams(
               icon: Icons.qr_code_2,
-              buttonText: tr("QR 코드"),
+              buttonText: tr("QR code"),
               onPressed: (context) async {},
             ),
           ),

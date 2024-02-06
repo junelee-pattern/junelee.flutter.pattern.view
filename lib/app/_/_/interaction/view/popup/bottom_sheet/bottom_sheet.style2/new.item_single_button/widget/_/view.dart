@@ -26,7 +26,7 @@ class _VState extends State<V> {
       tag: widget.tag,
       autoRemove: false,
       builder: (vmNewItemSingleButton) => Container(
-        child: Text(tr("이 게시물이 표시되는 이유"))
+        child: Text(tr("Why this post is shown"))
             .fontSize(TEXT_SIZE)
             .fontWeight(FontWeight.w500)
             .center(),

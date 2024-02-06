@@ -33,7 +33,7 @@ class _VState extends State<V> {
             children: [
               Icon(Icons.ios_share_outlined).iconSize(30),
               Gap(3),
-              Text("공유"),
+              Text("Share"),
             ],
           )
               .decorated(
@@ -50,7 +50,7 @@ class _VState extends State<V> {
             children: [
               Icon(Icons.link).iconSize(30),
               Gap(3),
-              Text("링크"),
+              Text("Url"),
             ],
           )
               .decorated(
@@ -69,7 +69,7 @@ class _VState extends State<V> {
                   .iconSize(30)
                   .iconColor(Colors.red),
               Gap(3),
-              Text("신고").textColor(Colors.red),
+              Text("Report").textColor(Colors.red),
             ],
           )
               .decorated(
