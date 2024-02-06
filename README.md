@@ -23,7 +23,7 @@ Please pull request your view.
       <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
     </td>
     <td>
-      <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/4d8b0936-99bd-48e2-a883-8f69dfc15821" width="300">
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/632dd967-02b1-4356-a795-a0073d4a3815" width="300">
       <p>toss_intro</p>
       <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
     </td>
