@@ -47,7 +47,7 @@ Please pull request your view.
 </table>
 
 ## Bottom Sheet
-<table>
+<table>ㅇ
   <tr>
     <td>
       <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/5117df01-9c59-4cd7-8e41-59af1ba21e88" width="200">
@@ -55,13 +55,28 @@ Please pull request your view.
       <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
     </td>
     <td>
-      <img src="https://github.com/melodysdreamj/junelee.views.lego-flutter/assets/21379657/b968a5f2-d238-44df-b341-4135bcbe2940" width="200">
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/af3e20c6-169d-4202-b679-d1aaf31bb344" width="200">
       <p>style1</p>
       <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
     </td>
     <td>
-      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/ac252bb9-36d7-491a-a8c5-a00061705e0f" width="200">
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/ff67e6b8-4b00-484c-9b96-2025caa0cf93" width="200">
       <p>style1.error</p>
+      <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
+    </td>
+     <td>
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/bfbb6f4f-b8f6-4c2e-b3b8-c3d4b755eb53" width="200">
+      <p>style1.id_duplicate</p>
+      <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
+    </td>
+     <td>
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/af3e20c6-169d-4202-b679-d1aaf31bb344" width="200">
+      <p>style1.need_login</p>
+      <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
+    </td>
+     <td>
+      <img src="https://github.com/melodysdreamj/junelee.flutter.pattern/assets/21379657/a575a98f-5427-450f-93fe-3ee3731bf0fc" width="200">
+      <p>style2</p>
       <p><a href="https://github.com/melodysdreamj">melodysdreamj</a></p>
     </td>
   </tr>
