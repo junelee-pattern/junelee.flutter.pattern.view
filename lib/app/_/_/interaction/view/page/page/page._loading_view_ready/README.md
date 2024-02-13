@@ -9,6 +9,5 @@
 Description of the view
 
 # Usage
-1.  
-2. Copy the parent folder that includes the README.
+1.   DME.
 2. 
